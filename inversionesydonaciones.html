@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>LearnMate | Inversiones y Donaciones</title>
+
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="css/mob_menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/cabecera.css" />
+
+    <link
+        href='https://fonts.googleapis.com/css?family=Raleway:800,500%7CLato:400,300,400italic,700,700italic,300italic,900italic,900,100,100italic%7CRoboto:400,500,600'
+        rel='stylesheet' type='text/css' />
+    <style>
+        .event-gallery {
+            text-align: center;
+            background-color: #2c3e50;
+            /* Color de fondo oscuro */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .event-gallery h2 {
+            color: #fff;
+            /* Texto blanco */
+            margin-bottom: 20px;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 columnas en la cuadrícula */
+            gap: 10px;
+            /* Espacio entre las imágenes */
+        }
+
+        .gallery-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.1);
+            /* Efecto de zoom al pasar el mouse */
+        }
+
+        /**/
+        .section {
+            margin-bottom: 90px;
+            margin-left: 90px;
+            /* Ajusta este valor según el espacio que desees */
+            margin-right: 90px;
+            /* Ajusta este valor según el espacio que desees */
+        }
+
+        .section-header {
+            background-color: #cfd8dc;
+            /* Color de fondo de los encabezados */
+            color: #000;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        .card a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .card a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .image-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .image-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-open {
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            /* Ajusta la altura según necesites */
+            border: none;
+        }
+
+        .content-wrapper {
+            display: flex;
+            /* Usar flexbox para el diseño */
+            justify-content: space-between;
+            /* Espacio entre los elementos */
+            align-items: flex-start;
+            /* Alinear elementos al inicio */
+        }
+
+        .text-content {
+            flex: 1;
+            /* Ocupa el espacio restante */
+            margin-right: 20px;
+            /* Espacio entre el texto y la imagen */
+        }
+
+        .image-content {
+            flex-shrink: 0;
+            /* Evita que la imagen se reduzca */
+        }
+
+        .image-content img {
+            max-width: 100%;
+            /* Asegura que la imagen no exceda el ancho de su contenedor */
+            height: auto;
+            /* Mantiene la proporción de la imagen */
+        }
+    </style>
+</head>
+
+<body id="home" class="cms_blog">
+
+    <div class="header_top">
+        <div class="container">
+            <div class="top_info">
+                <span>Have any question?</span>
+                <span class="cont_no">
+                    <i class="fa fa-phone"></i> <a href="#">USA : + 1 800 123 1234</a>
+                </span>
+                <i class="fa fa-envelope"></i> <a href="mailto:abcxyz@abc.com">support@abcxyz.com</a>
+            </div>
+            <ul class="top_menu">
+                <li class="special">Mon - Sat &nbsp;&nbsp;(9am - 5pm) &nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#">Register</a> /</li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="header1">
+        <div class="container0">
+            <div class="logo">
+                <img src="images/logoChirinos.png" alt="Logo IESTP Chirinos">
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa fa-phone"></i> <!-- Aquí puedes usar un ícono de Font Awesome si tienes configurado -->
+                    <span>LLÁMANOS<br>952612565</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-clock"></i> <!-- Aquí puedes usar un ícono de Font Awesome si tienes configurado -->
+                    <span>HORARIO ATENCIÓN<br>Lunes a Viernes 8am - 1pm</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+
+
+
+        <nav>
+            <div class="container">
+
+                <div id="navbar" class="navbar navbar-default">
+
+                    <div class="col-md-9 col-sm-7 col-xs-7 pull-xs-right">
+
+
+                        <div id="dl-menu" class="dl-menuwrapper">
+                            <button class="dl-trigger visible-sm visible-xs"><i class="fa fa-bars"></i></button>
+                            <ul class="dl-menu">
+                                <li>
+
+                                </li>
+                                <li>
+                                    <a href="#">Inicio</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">Nosotros</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="quienessomos.html">Quienes somos</a></li>
+                                        <li><a href="organizacioninstitu.html">Organizacion institucional</a></li>
+                                        <li><a href="planaGerargica.html">Plana Jerárgica</a></li>
+                                        <li><a href="teachers.html">Personal Docente</a></li>
+                                        <li><a href="local.html">Local</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li>
+                                <a href="#"> Programas de estudio</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="AGROPECUARIA.html">AGROPECUARIA</a></li>
+
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"> Admision</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="admision.html">Admision 2024</a></li>
+                                    <li><a href="#">Becas y Creditos</a></li>
+                                    <li><a href="matricula.html">Matriculas</a></li>
+                                    <li><a href="#">Calendarización</a></li>
+
+                                </ul>
+
+
+                            </li>
+
+
+
+                            <li>
+                                <a href="#"> Transparencia</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="documentosdegestion.html">Documento de Gestion</a></li>
+                                    <li><a href="estadistica.html">Estadistica</a></li>
+                                    <li><a href="inversionesydonaciones.html">Inversiones</a></li>
+                                    <li><a href="librodereclamaciones.html">Libro De Reclamaciones</a></li>
+                                    <li><a href="licenciamiento.html">Licenciamiento</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"> Tramite</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="blog_right_sidebar.html">Tupa</a></li>
+                                    <li><a href="#">Tramite Docuementario</a></li>
+                                    <li><a href="contact.html">Constacto</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"> Servicios</a>
+                                <ul class="dl-submenu">
+                                    <li><a
+                                            href="https://elibro.net/es/lc/institutochirinos/login_usuario/?next=/es/lc/institutochirinos/inicio/">Biblioteca
+                                            Virtual</a></li>
+                                    <li><a href="https://institutoChirinos.site/login/index.php" targ>Campus
+                                            Virtual</a></li>
+                                    <li><a href="servicioscomplementarios.html">Servicio Complemantario</a></li>
+
+                                </ul>
+
+
+                            </li>
+
+                            <li>
+                                <a class="trigger" href="contact.html">Otros</a>
+                            </li>
+
+
+                        </div>
+                        <!--FIN DEL MENU EMERGENTE-->
+
+
+
+                        <!--Menu de la parte superior -->
+
+                        <div class="main_menu_wrap">
+                            <ul class="main_menu">
+                                <li><a class="trigger" href="index3.html">inicio <i class=""></i></a>
+                                </li>
+                                <li><a class="trigger" href="#">NOSOTROS <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="quienessomos.html">Quienes somos</a></li>
+                                        <li><a href="organizacioninstitu.html">Organizacion institucional</a></li>
+                                        <li><a href="planaGerargica.html">Plana Jerárgica</a></li>
+                                        <li><a href="teachers.html">Personal Docente</a></li>
+                                        <li><a href="local.html">Local</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">PROGRAMA DE ESTUDIO <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="AGROPECUARIA.html">AGROPECUARIA</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Admision <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="admision.html">Admision 2024</a></li>
+                                        <li><a href="#">Becas y Creditos</a></li>
+                                        <li><a href="matricula.html">Matriculas</a></li>
+                                        <li><a href="#">Calendarización</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">TRASNSPARENCIA <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="documentosdegestion.html">Documento de Gestion</a></li>
+                                        <li><a href="estadistica.html">Estadistica</a></li>
+                                        <li><a href="inversionesydonaciones.html">Inversiones</a></li>
+                                        <li><a href="librodereclamaciones.html">Libro De Reclamaciones</a></li>
+                                        <li><a href="licenciamiento.html">Licenciamiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Tramite <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="blog_right_sidebar.html">Tupa</a></li>
+                                        <li><a href="#">Tramite Docuementario</a></li>
+                                        <li><a href="contact.html">Constacto</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Servicios <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a
+                                                href="https://elibro.net/es/lc/institutochirinos/login_usuario/?next=/es/lc/institutochirinos/inicio/">Biblioteca
+                                                Virtual</a></li>
+                                        <li><a href="https://institutoChirinos.site/login/index.php" targ>Campus
+                                                Virtual</a></li>
+                                        <li><a href="servicioscomplementarios.html">Servicio Complemantario</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="contact.html">Otros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="content_wrapper">
+        <br><br>
+
+
+        <div class="section">
+            <div class="section-header">DONACIONES</div>
+            <div class="card">
+                <p> <a href="https://docs.google.com/spreadsheets/d/1GJJLQo2kYDSLRFLQusD4IV64TeTO3mL1/edit?gid=1137425421#gid=1137425421"
+                        target="_blank">MiskyMayo AÑO 2022</a></p>
+                <p><a href="https://docs.google.com/spreadsheets/d/1OdMlPbMfW4l2mg4CCudj8xC1TGeJv0ak/edit?gid=1006714488#gid=1006714488"
+                        target="_blank">PNIPA AÑO 2022</a></p>
+            </div>
+
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Archivo Excel</h2>
+                <iframe id="excelIframe" src=""></iframe>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">INVERSIONES, REINVERSIONES Y OBRAS DE INFRAESTRUCTURA</div>
+            <div class="card">
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p><strong>Obras Públicas 2021</strong></p>
+                        <p>Proyecto de inversión Pública ejecutado en el año 2017 – 2018 con <strong>CÓDIGO SNIP
+                                Nº293441</strong>
+                            <a href="https://docs.google.com/spreadsheets/d/1OdMlPbMfW4l2mg4CCudj8xC1TGeJv0ak/edit?gid=1006714488#gid=1006714488"
+                                target="_blank"> Clic para ver detalles</a>
+                        </p>
+                        <p><strong>Obras Públicas 2022</strong></p>
+                        <p>Proyecto de inversión Pública ejecutado en el año 2017 – 2018 con <strong>CÓDIGO SNIP
+                                Nº293441</strong>
+                            <a href="https://docs.google.com/spreadsheets/d/1OdMlPbMfW4l2mg4CCudj8xC1TGeJv0ak/edit?gid=1006714488#gid=1006714488"
+                                target="_blank"> Clic para ver detalles</a>
+                        </p>
+                        <p><strong>Obras Públicas 2023</strong></p>
+                        <p>Proyecto de inversión Pública ejecutado en el año 2017 – 2018 con <strong>CÓDIGO SNIP
+                                Nº293441</strong>
+                            <a href="https://docs.google.com/spreadsheets/d/1OdMlPbMfW4l2mg4CCudj8xC1TGeJv0ak/edit?gid=1006714488#gid=1006714488"
+                                target="_blank"> Clic para ver detalles</a>
+                        </p>
+                        <p><strong>Obras Públicas 2024</strong></p>
+                        <p>Proyecto de inversión Pública ejecutado en el año 2017 – 2018 con <strong>CÓDIGO SNIP
+                                Nº293441</strong>
+                            <a href="https://docs.google.com/spreadsheets/d/1OdMlPbMfW4l2mg4CCudj8xC1TGeJv0ak/edit?gid=1006714488#gid=1006714488"
+                                target="_blank"> Clic para ver detalles</a>
+                        </p>
+                    </div>
+                    <div class="image-content">
+                        <img src="images/computadora.png" alt="Imagen de muestra">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="image-card">
+                <img src="images/computadora.png" alt="Imagen de muestra">
+            </div>
+        </div>
+        <!-- Contenedor del menú de pestañas -->
+
+        <br><br><br><br><br>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+        <div class="row">
+        
+        <div class="footer_link_wrapper">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <ul class="footer_list">
+        <li>
+        <div class="footer_logo"><img alt="Footer Logo" src="images/logoprincipal.png"></div>
+        <div class="footer_txt"><p>Formamos los mejores profesionales que necesita el mundo.</p></div>
+        <div class="footer_email"><i class="fa fa-envelope"></i> <a href="mailto:abcxyz@abc.com">educhirinos2020@gmail.com</a></div>
+        <div class="footer_phone"><i class="fa fa-phone"></i> + 51 956 126 390</div>
+        <div class="social_links">
+        <a href="#" target="_blank" rel="external nofollow" title="Share it"><i class="fa fa-facebook"></i></a>
+        <a href="#" target="_blank" rel="external nofollow" title="Tweet it"><i class="fa fa-twitter"></i></a>
+        <a href="#" target="_blank" rel="external nofollow" title="Linked it"><i class="fa fa-linkedin"></i></a>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <ul class="footer_list">
+        <li>
+        <h3>Conocenos:</h3>
+        <ul class="foot_letnews_list">
+        <li>
+        <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_1.jpg"></div>
+        <div class="foot_letnews_info">
+            <br>
+        <h4><a href="local.html">ESTAMOS UBICADOS EN:</a></h4>
+        </div>
+        </li>
+        <li>
+        <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_2.jpg"></div>
+        <div class="foot_letnews_info">
+            <br>
+        <h4><a href="conocenos.html">NUESTROS OBJETIVOS:</a></h4>
+        </div>
+        </li>
+        <li>
+        <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_3.jpg"></div>
+        <div class="foot_letnews_info">
+            <br>
+        <h4><a href="AGROPECUARIA.html">NUESTROS PROGRAMAS:</a></h4>
+        </div>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <ul class="footer_list">
+        </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padd_rnone">
+        <div class="foot_gallery">
+        <h3>Galeria</h3>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_1.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_2.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_3.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_4.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_5.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_6.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_7.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_8.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_9.jpg"></div>
+        </div>
+        </div>
+        </div>
+        
+        </div>
+        </div>
+        <div class="copyright">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coppyright_txt">© 2024 CHIRINOS. Todos los derechos reservados</div>
+        <div class="time_available col-lg-3 col-md-3 col-sm-6 col-xs-6"><i class="fa fa-clock-o"></i> Lunes - Viernes &nbsp;&nbsp;(8am - 1pm) &nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="social col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <ul class="pull-right">
+        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </footer>
+        
+
+
+    <div class="offcanvas_overlay"></div>
+
+    <script>
+        function openModal(filePath) {
+            document.getElementById('excelIframe').src = filePath; // Carga el archivo Excel en el iframe
+            document.getElementById('myModal').style.display = "block";
+            document.body.classList.add('modal-open');
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+            document.body.classList.remove('modal-open');
+            document.getElementById('excelIframe').src = ""; // Limpia el iframe
+        }
+
+        // Cerrar el modal cuando el usuario haga clic fuera de él
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('myModal')) {
+                closeModal();
+            }
+        }
+    </script>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/jquery-plugin-collection.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/js-functions.js"></script>
+</body>
+
+
+</html>

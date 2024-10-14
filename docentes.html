@@ -1,0 +1,1048 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!--[if IE]>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+
+
+<!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="js/respond.min.js"></script>
+	<![endif]-->
+
+<link rel="icon" href="images/logoprincipal.png" type="image/x-icon" />
+<title>CHIRINOS | Plan Docente</title>
+
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="css/mob_menu.css" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/cabecera.css" />
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:800,500%7CLato:400,300,400italic,700,700italic,300italic,900italic,900,100,100italic%7CRoboto:400,500,600' rel='stylesheet' type='text/css' />
+<style>
+        /* Modal Styles */
+        .modal {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            z-index: 1000; /* Asegura que el modal esté en frente */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 1001; /* Asegura que el contenido del modal esté en frente */
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Background dimming */
+        .modal-open {
+            overflow: hidden; /* Previene el scroll de la página cuando el modal está abierto */
+        }
+    </style>
+        <style>
+            /*contenedor de carrusel */
+            .contenedorcarrusel {
+                max-width: 1200px;
+                /* Define un ancho máximo para el carrusel */
+                margin: 0 auto;
+                /* Centra el carrusel horizontalmente */
+                padding: 0 20px;
+                /* Agrega un pequeño padding a los lados */
+            }
+    
+            /* Ocultar los ítems que están fuera de la vista */
+            .owl-carousel .owl-stage {
+                display: flex;
+                justify-content: center;
+                /* Centrar los elementos visibles */
+            }
+    
+            .owl-carousel .item {
+                flex: 0 0 250px;
+                /* Define un tamaño fijo para cada tarjeta */
+                margin-right: 10px;
+                /* Espacio entre los elementos */
+            }
+    
+    
+            /* Estilos para el contenedor principal */
+            .contenedor3 {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 0 auto;
+                max-width: 1200px;
+                padding: 20px;
+            }
+    
+    
+            /* Ajustes para las tarjetas individuales */
+            .card3 {
+                background-color: white;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 200px;
+                /* Ajusta el tamaño de las tarjetas */
+            }
+    
+            /* Estilo para las imágenes */
+            .imagen3 {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-bottom: 15px;
+            }
+    
+            /* Estilos para los nombres */
+            .nombre3 {
+                font-size: 18px;
+                color: #d9534f;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+    
+            /* Estilos para los puestos */
+            .puesto3 {
+                font-size: 16px;
+                margin-bottom: 5px;
+                font-weight: normal;
+            }
+    
+            /* Estilos para los detalles */
+            .detalle3 {
+                font-size: 14px;
+                color: #555;
+                margin-bottom: 20px;
+            }
+    
+            /* Estilos para los íconos de redes sociales */
+            .redes3 a {
+                margin: 0 10px;
+                color: #333;
+                font-size: 18px;
+            }
+    
+            /* Estilo para el botón */
+            .boton3 {
+                background-color: #0275d8;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+    
+            .boton3:hover {
+                background-color: #025aa5;
+            }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            /* Estilos del modal */
+            .modal3 {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.4);
+                /* Fondo oscuro */
+            }
+    
+            .modal-contenido3 {
+                background-color: white;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                max-width: 600px;
+                border-radius: 10px;
+            }
+    
+            .cerrar3 {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+    
+            .cerrar3:hover,
+            .cerrar3:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+                      .lo1g img {
+            width: 80px;
+            /* Ajusta el tamaño del logotipo */
+            margin-right: 10px;
+        }
+        </style>
+</head>
+<body id="home" class="cms_teacher">
+
+    <div class="header_top">
+        <div class="container">
+            <div class="top_info">
+            
+                <span class="cont_no">
+                    <i class="fa fa-phone"></i> 
+                    <a href="https://wa.me/51920857079" target="_blank">LLÁMANOS : + 51 956 126 390</a>
+                </span>
+                <i class="fa fa-envelope"></i> 
+                    <a href="mailto:educhirinos2020@gmail.com">educhirinos2020@gmail.com</a>
+            </div>
+            <ul class="top_menu">
+                <li class="special">Lunes - Viernes &nbsp;&nbsp;(8am - 1pm) &nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ul>
+        </div>
+    </div>
+    <header class="header1">
+        <div class="container0">
+            <div class="lo1g">
+                <img src="images/logoprincipal.png" alt="Logo IESTP CHIRINOS">
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa fa-phone"></i> <!-- Aquí puedes usar un ícono de Font Awesome si tienes configurado -->
+                    <span>LLÁMANOS<br>+ 51 956 126 390</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-clock"></i> <!-- Aquí puedes usar un ícono de Font Awesome si tienes configurado -->
+                    <span>HORARIO ATENCIÓN<br>Lunes a Viernes 8am - 1pm</span>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media (max-width: 768px) {
+    .header1 {
+        display: none; /* Oculta la información de contacto en móviles */
+    }
+}
+* Estilos para el modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+
+  left: 0;
+  top: 0;
+  width: 5000PX; /* Ancho completo */
+  height: 10000PX; /* Altura completa */
+  overflow: auto; /* Scroll si es necesario */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+        </style>
+    </header>
+    <header>
+
+        <nav>
+            <div class="container">
+                <div id="navbar" class="navbar navbar-default">
+
+                    <div class="col-md-9 col-sm-7 col-xs-7 pull-xs-right">
+
+                        <div id="dl-menu" class="dl-menuwrapper">
+                            <button class="dl-trigger visible-sm visible-xs"><i class="fa fa-bars"></i></button>
+                            <ul class="dl-menu">
+                                <li>
+
+                                </li>
+                                <li>
+                                    <a href="index.html">Inicio</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">Nosotros</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="conocenos.html">Quienes somos</a></li>
+                                        <li><a href="organizacion-institucional.html">Organizacion institucional</a></li>
+                                        <li><a href="plana-jerarquica.html">Plana Jerárgica</a></li>
+                                        <li><a href="docentes.html">Personal Docente</a></li>
+                                        <li><a href="local.html">Local</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li>
+                                <a href="#"> Programas de estudio</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="AGROPECUARIA.html">AGROPECUARIA</a></li>
+
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"> Admision</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="admision.html">Admision 2024</a></li>
+                                    <li><a href="#">Becas y Creditos</a></li>
+                                    <li><a href="matricula.html">Matriculas</a></li>
+                                    <li><a href="#">Calendarización</a></li>
+
+                                </ul>
+
+
+                            </li>
+
+
+
+                            <li>
+                                <a href="#"> Transparencia</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="documentosdegestion.html">Documento de Gestion</a></li>
+                                    <li><a href="#">Estadistica</a></li>
+                                    <li><a href="inversionesydonaciones.html">Inversiones</a></li>
+                                    <li><a href="reclamaciones.html">Libro De Reclamaciones</a></li>
+                                    <li><a href="licenciamiento.html">Licenciamiento</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"> Tramite</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="tupa.html">Tupa</a></li>
+                                    <li><a href="#">Tramite Docuementario</a></li>
+                                   
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"> Servicios</a>
+                                <ul class="dl-submenu">
+                                    <li><a
+                                            href="https://elibro.net/es/lc/institutochirinos/login_usuario/?next=/es/lc/institutochirinos/inicio/">Biblioteca
+                                            Virtual</a></li>
+                                    <li><a href="https://institutoCHIRINOS.site/login/index.php" targ>Campus
+                                            Virtual</a></li>
+                                    <li><a href="#">Bolsa Laboral</a></li>
+
+                                </ul>
+
+
+                            </li>
+
+                            <li>
+                                <a href="#"> otros</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="#">Link instirucionales</a></li>
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                </ul>
+                            </li>
+
+
+                        </div>
+                        <!--FIN DEL MENU EMERGENTE-->
+
+
+
+                        <!--Menu de la parte superior -->
+
+                        <div class="main_menu_wrap">
+                            <ul class="main_menu">
+                                <li><a class="trigger" href="index.html">inicio <i class=""></i></a>
+                                </li>
+                                <li><a class="trigger" href="#">NOSOTROS <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="conocenos.html">Quienes somos</a></li>
+                                        <li><a href="organizacion-institucional.html">Organizacion institucional</a></li>
+                                        <li><a href="plana-jerarquica.html">Plana Jerárgica</a></li>
+                                        <li><a href="docentes.html">Personal Docente</a></li>
+                                        <li><a href="local.html">Local</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">PROGRAMA DE ESTUDIO <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="AGROPECUARIA.html">AGROPECUARIA</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Admision <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="admision.html">Admision 2024</a></li>
+                                        <li><a href="#">Becas y Creditos</a></li>
+                                        <li><a href="matricula.html">Matriculas</a></li>
+                                        <li><a href="#">Calendarización</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">TRASNSPARENCIA <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="documentosdegestion.html">Documento de Gestion</a></li>
+                                        <li><a href="#">Estadistica</a></li>
+                                        <li><a href="inversionesydonaciones.html">Inversiones</a></li>
+                                        <li><a href="reclamaciones.html">Libro De Reclamaciones</a></li>
+                                        <li><a href="licenciamiento.html">Licenciamiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Tramite <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="tupa.html">Tupa</a></li>
+                                        <li><a href="#">Tramite Docuementario</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Servicios <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a
+                                                href="https://elibro.net/es/lc/institutochirinos/login_usuario/?next=/es/lc/institutochirinos/inicio/">Biblioteca
+                                                Virtual</a></li>
+                                        <li><a href="https://institutoCHIRINOS.site/login/index.php" targ>Campus
+                                                Virtual</a></li>
+                                        <li><a href="servicioscomplementarios.html">Servicio Complemantario</a></li>
+                                        <li><a href="#">Bolsa Laboral</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Otros <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Link Institucionales</a></li>
+                                        <li><a href="contacto.html">Contacto</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="content_wrapper">
+
+        <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3"
+            style="background: url(images/instructor.png) no-repeat; background-attachment: fixed; background-position: top left; background-size: cover;">
+            <div class="breadcrumb_wrap_inner">
+                <div class="container">
+                    <h1>NUESTROS DOCENTES</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content_wrapper">
+
+            <br><br><br>
+            <div class="container">
+    
+                    <div class="faculty_wrapp col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                    
+                    
+                    
+                            <div class="wrapper_faculty">
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="faculty_block">
+                                            <div class="img_wrap">
+                                                <img alt="Alaxander Louise" src="images/resized_images_folder/resized_Ing. Angel Rojas.jpeg">
+                                                <div class="faculty_img_hoverlay_btn">
+                                                    <a href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">curriculum vitae</a>
+                                                </div>
+                                                <ul class="social_links">
+                                                    <li><a class="fa fa-facebook" href="#"></a></li>
+                                                    <li><a class="fa fa-instagram" href="#"></a></li>
+                                                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                                                    <li><a class="fa fa-twitter" href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="science">
+                                                <div class="faculty_info">
+                                                    
+                                                    <h4><a href="teacher_dtl.html" title="Alaxander Louise">Ing. Angel Rojas</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet do, consectetur adipisicing elit, se do eiusmod temp incididunt ut labore ipsum dolor sit.</p>
+                                                    <button  href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">CURSO DE MATEMATICA</button>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Modal for Alaxander Louise -->
+                                    <div id="modalAlaxander" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeModal('modalAlaxander')">&times;</span>
+                                            <h2>Alaxander Louise</h2>
+                                            <iframe id="pdfViewerAlaxander" style="width:100%; height:400px;" src="pdf/consolidado_de_asistencias.pdf"></iframe>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        // Función para abrir el modal
+                                        function openModal(modalId) {
+                                          var modal = document.getElementById(modalId);
+                                          if (modal) {
+                                            modal.style.display = "block"; // Mostrar el modal
+                                          }
+                                        }
+                                      
+                                        // Función para cerrar el modal
+                                        function closeModal(modalId) {
+                                          var modal = document.getElementById(modalId);
+                                          if (modal) {
+                                            modal.style.display = "none"; // Ocultar el modal
+                                          }
+                                        }
+                                      
+                                        // Cerrar el modal si el usuario hace clic fuera del contenido del modal
+                                        window.onclick = function(event) {
+                                          var modals = document.getElementsByClassName("modal");
+                                          for (var i = 0; i < modals.length; i++) {
+                                            if (event.target == modals[i]) {
+                                              modals[i].style.display = "none";
+                                            }
+                                          }
+                                        }
+                                      </script>
+                                      
+                                      
+                                
+                                    <!-- Repeat similar blocks for other profiles -->
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="faculty_block">
+                                            <div class="img_wrap">
+                                                <img alt="Sarah Johnson" src="images/resized_images_folder/resized_Ing. Aureliano Cobos.jpeg">
+                                                <div class="faculty_img_hoverlay_btn">
+                                                    <a href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalSarah')">curriculum vitae</a>
+                                                </div>
+                                                <ul class="social_links">
+                                                    <li><a class="fa fa-facebook" href="#"></a></li>
+                                                    <li><a class="fa fa-instagram" href="#"></a></li>
+                                                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                                                    <li><a class="fa fa-twitter" href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="accounts">
+                                                <div class="faculty_info">
+                                                    <h4><a href="teacher_dtl.html" title="Sarah Johnson">Ing. Aureliano Cobos</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet do, consectetur adipisicing elit, se do eiusmod temp incididunt ut labore ipsum dolor sit.</p>
+                                                    <button  href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">CURSO DE MATEMATICA</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Modal for Sarah Johnson -->
+                                    <div id="modalSarah" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeModal('modalSarah')">&times;</span>
+                                            <h2>Sarah Johnson</h2>
+                                            <iframe id="pdfViewerSarah" style="width:100%; height:400px;" src="path/to/sarah_johnson.pdf"></iframe>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Continue for other profiles -->
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="faculty_block">
+                                            <div class="img_wrap">
+                                                <img alt="Leonardo Bonucci" src="images/resized_images_folder/resized_Ing. Eder Lalangui.png">
+                                                <div class="faculty_img_hoverlay_btn">
+                                                    <a href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalLeonardo')">curriculum vitae</a>
+                                                </div>
+                                                <ul class="social_links">
+                                                    <li><a class="fa fa-facebook" href="#"></a></li>
+                                                    <li><a class="fa fa-instagram" href="#"></a></li>
+                                                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                                                    <li><a class="fa fa-twitter" href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="business">
+                                                <div class="faculty_info">
+                                                    <h4><a href="teacher_dtl.html" title="Leonardo Bonucci">Ing. Eder Lalangui</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet do, consectetur adipisicing elit, se do eiusmod temp incididunt ut labore ipsum dolor sit.</p>
+                                                    <button  href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">CURSO DE MATEMATICA</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Modal for Leonardo Bonucci -->
+                                    <div id="modalLeonardo" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeModal('modalLeonardo')">&times;</span>
+                                            <h2>Leonardo Bonucci</h2>
+                                            <iframe id="pdfViewerLeonardo" style="width:100%; height:400px;" src="pdf/horario_de_clases (2).pdf"></iframe>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Continue for other profiles -->
+                                    <!-- ... Add similar blocks for Rebeca Addam, Jerry Moulton, etc. ... -->
+                                
+                            </div>
+                                <div class="wrapper_faculty">
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="faculty_block">
+                                            <div class="img_wrap">
+                                                <img alt="Alaxander Louise" src="images/resized_images_folder/resized_Ing. Holguin Hernandez.jpeg">
+                                                <div class="faculty_img_hoverlay_btn">
+                                                    <a href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">curriculum vitae</a>
+                                                </div>
+                                                <ul class="social_links">
+                                                    <li><a class="fa fa-facebook" href="#"></a></li>
+                                                    <li><a class="fa fa-instagram" href="#"></a></li>
+                                                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                                                    <li><a class="fa fa-twitter" href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="science">
+                                                <div class="faculty_info">
+                                                    <h4><a href="teacher_dtl.html" title="Alaxander Louise">Ing. Holguin Hernandez</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet do, consectetur adipisicing elit, se do eiusmod temp incididunt ut labore ipsum dolor sit.</p>
+                                                    <button  href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">CURSO DE MATEMATICA</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Modal for Alaxander Louise -->
+                                    <div id="modalAlaxander" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeModal('modalAlaxander')">&times;</span>
+                                            <h2>Alaxander Louise</h2>
+                                            <iframe id="pdfViewerAlaxander" style="width:100%; height:400px;" src="path/to/alaxander_louise.pdf"></iframe>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Repeat similar blocks for other profiles -->
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="faculty_block">
+                                            <div class="img_wrap">
+                                                <img alt="Sarah Johnson" src="images/resized_images_folder/resized_Ing. James de la Cruz.jpeg">
+                                                <div class="faculty_img_hoverlay_btn">
+                                                    <a href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalSarah')">curriculum vitae</a>
+                                                </div>
+                                                <ul class="social_links">
+                                                    <li><a class="fa fa-facebook" href="#"></a></li>
+                                                    <li><a class="fa fa-instagram" href="#"></a></li>
+                                                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                                                    <li><a class="fa fa-twitter" href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="accounts">
+                                                <div class="faculty_info">
+                                                    <h4><a href="teacher_dtl.html" title="Sarah Johnson">Ing. James de la Cruz</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet do, consectetur adipisicing elit, se do eiusmod temp incididunt ut labore ipsum dolor sit.</p>
+                                                    <button  href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">CURSO DE MATEMATICA</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Modal for Sarah Johnson -->
+                                    <div id="modalSarah" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeModal('modalSarah')">&times;</span>
+                                            <h2>Sarah Johnson</h2>
+                                            <iframe id="pdfViewerSarah" style="width:100%; height:400px;" src="path/to/sarah_johnson.pdf"></iframe>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Continue for other profiles -->
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="faculty_block">
+                                            <div class="img_wrap">
+                                                <img alt="Leonardo Bonucci" src="images/resized_images_folder/resized_Ing. Joelmer Espinoza .jpeg">
+                                                <div class="faculty_img_hoverlay_btn">
+                                                    <a href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalLeonardo')">curriculum vitae</a>
+                                                </div>
+                                                <ul class="social_links">
+                                                    <li><a class="fa fa-facebook" href="#"></a></li>
+                                                    <li><a class="fa fa-instagram" href="#"></a></li>
+                                                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                                                    <li><a class="fa fa-twitter" href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="business">
+                                                <div class="faculty_info">
+                                                    <h4><a href="teacher_dtl.html" title="Leonardo Bonucci">Ing. Joelmer Espinoza</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet do, consectetur adipisicing elit, se do eiusmod temp incididunt ut labore ipsum dolor sit.</p>
+                                                    <button  href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">CURSO DE MATEMATICA</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Modal for Leonardo Bonucci -->
+                                    <div id="modalLeonardo" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeModal('modalLeonardo')">&times;</span>
+                                            <h2>Leonardo Bonucci</h2>
+                                            <iframe id="pdfViewerLeonardo" style="width:100%; height:400px;" src="pdf/horario_de_clases (2).pdf"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="faculty_block">
+                                            <div class="img_wrap">
+                                                <img alt="Leonardo Bonucci" src="images/resized_images_folder/resized_Ing. Leder Guerrero.jpeg">
+                                                <div class="faculty_img_hoverlay_btn">
+                                                    <a href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalLeonardo')">curriculum vitae</a>
+                                                </div>
+                                                <ul class="social_links">
+                                                    <li><a class="fa fa-facebook" href="#"></a></li>
+                                                    <li><a class="fa fa-instagram" href="#"></a></li>
+                                                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                                                    <li><a class="fa fa-twitter" href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="business">
+                                                <div class="faculty_info">
+                                                    <h4><a href="teacher_dtl.html" title="Leonardo Bonucci">Ing. Leder Guerrero</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet do, consectetur adipisicing elit, se do eiusmod temp incididunt ut labore ipsum dolor sit.</p>
+                                                    <button  href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">CURSO DE MATEMATICA</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Modal for Leonardo Bonucci -->
+                                    <div id="modalLeonardo" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeModal('modalLeonardo')">&times;</span>
+                                            <h2>Leonardo Bonucci</h2>
+                                            <iframe id="pdfViewerLeonardo" style="width:100%; height:400px;" src="pdf/horario_de_clases (2).pdf"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="faculty_block">
+                                            <div class="img_wrap">
+                                                <img alt="Leonardo Bonucci" src="images/resized_images_folder/resized_Ing. Nancy Lizana.png">
+                                                <div class="faculty_img_hoverlay_btn">
+                                                    <a href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalLeonardo')">curriculum vitae</a>
+                                                </div>
+                                                <ul class="social_links">
+                                                    <li><a class="fa fa-facebook" href="#"></a></li>
+                                                    <li><a class="fa fa-instagram" href="#"></a></li>
+                                                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                                                    <li><a class="fa fa-twitter" href="#"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="business">
+                                                <div class="faculty_info">
+                                                    <h4><a href="teacher_dtl.html" title="Leonardo Bonucci">Ing. Nancy Lizana</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet do, consectetur adipisicing elit, se do eiusmod temp incididunt ut labore ipsum dolor sit.</p>
+                                                    <button  href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">CURSO DE MATEMATICA</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Modal for Leonardo Bonucci -->
+                                    <div id="modalLeonardo" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close" onclick="closeModal('modalLeonardo')">&times;</span>
+                                            <h2>Leonardo Bonucci</h2>
+                                            <iframe id="pdfViewerLeonardo" style="width:100%; height:400px;" src="pdf/horario_de_clases (2).pdf"></iframe>
+                                        </div>
+                                    </div>
+                                                                <!-- Modal for Leonardo Bonucci -->
+                                                                <div id="modalLeonardo" class="modal">
+                                                                    <div class="modal-content">
+                                                                        <span class="close" onclick="closeModal('modalLeonardo')">&times;</span>
+                                                                        <h2>Leonardo Bonucci</h2>
+                                                                        <iframe id="pdfViewerLeonardo" style="width:100%; height:400px;" src="pdf/horario_de_clases (2).pdf"></iframe>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                                    <div class="faculty_block">
+                                                                        <div class="img_wrap">
+                                                                            <img alt="Leonardo Bonucci" src="images/resized_images_folder/resized_Mv. Norman Saldaña.png">
+                                                                            <div class="faculty_img_hoverlay_btn">
+                                                                                <a href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalLeonardo')">curriculum vitae</a>
+                                                                            </div>
+                                                                            <ul class="social_links">
+                                                                                <li><a class="fa fa-facebook" href="#"></a></li>
+                                                                                <li><a class="fa fa-instagram" href="#"></a></li>
+                                                                                <li><a class="fa fa-google-plus" href="#"></a></li>
+                                                                                <li><a class="fa fa-twitter" href="#"></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="business">
+                                                                            <div class="faculty_info">
+                                                                                <h4><a href="teacher_dtl.html" title="Leonardo Bonucci">Mv. Norman Saldaña</a></h4>
+                                                                                <p>Lorem ipsum dolor sit amet do, consectetur adipisicing elit, se do eiusmod temp incididunt ut labore ipsum dolor sit.</p>
+                                                                                <button  href="javascript:void(0);" title="View Profile" class="btn btn_glob" onclick="openModal('modalAlaxander')">CURSO DE MATEMATICA</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            
+                                                                <!-- Modal for Leonardo Bonucci -->
+                                                                <div id="modalLeonardo" class="modal">
+                                                                    <div class="modal-content">
+                                                                        <span class="close" onclick="closeModal('modalLeonardo')">&times;</span>
+                                                                        <h2>Leonardo Bonucci</h2>
+                                                                        <iframe id="pdfViewerLeonardo" style="width:100%; height:400px;" src="pdf/horario_de_clases (2).pdf"></iframe>
+                                                                    </div>
+                                                                </div>
+                                    <!-- Continue for other profiles -->
+                                    <!-- ... Add similar blocks for Rebeca Addam, Jerry Moulton, etc. ... -->
+                                
+                                </div>
+                                
+                    
+                    <div class="clearfix"></div>
+                    
+                    
+                    </div>
+                    
+                    
+                    <div class="aside_wrapper col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                    
+                    
+                    
+                    
+                    <div class="category_course">
+                    <h4>CATEGORIA</h4>
+                    <ul>
+                    <li><a href="#">Producción Agropecuaria</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    </ul>
+                    </div>
+                    
+                    
+                    <div class="category_events">
+                    <h4>Events</h4>
+                    <ul>
+                    <li>
+                    <div class="date">
+                    <span class="month">Mar</span>
+                    <span class="day">20</span>
+                    </div>
+                    <div class="event_txt">
+                    <h5><a href="#">Grades at Educor Sky Rocket</a></h5>
+                    <p> Vivamus tellus leo, imperdiet sed sapien.</p>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="date">
+                    <span class="month">Apr</span>
+                    <span class="day">15</span>
+                    </div>
+                    <div class="event_txt">
+                    <h5><a href="#">The Design of HTML5</a></h5>
+                    <p> Vivamus tellus leo, imperdiet sed sapien.</p>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="date">
+                    <span class="month">May</span>
+                    <span class="day">25</span>
+                    </div>
+                    <div class="event_txt">
+                    <h5><a href="#">Online Learning Glossary</a></h5>
+                    <p> Vivamus tellus leo, imperdiet sed sapien.</p>
+                    </div>
+                    </li>
+                    </ul>
+                    </div>
+                    
+                
+                    </div>
+                    
+                    </div>
+    </div>
+        <br><br><br>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+        <div class="row">
+        
+        <div class="footer_link_wrapper">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <ul class="footer_list">
+        <li>
+        <div class="footer_logo"><img alt="Footer Logo" src="images/logoprincipal.png"></div>
+        <div class="footer_txt"><p>Formamos los mejores profesionales que necesita el mundo.</p></div>
+        <div class="footer_email"><i class="fa fa-envelope"></i> <a href="mailto:abcxyz@abc.com">educhirinos2020@gmail.com</a></div>
+        <div class="footer_phone"><i class="fa fa-phone"></i> + 51 956 126 390</div>
+        <div class="social_links">
+        <a href="#" target="_blank" rel="external nofollow" title="Share it"><i class="fa fa-facebook"></i></a>
+        <a href="#" target="_blank" rel="external nofollow" title="Tweet it"><i class="fa fa-twitter"></i></a>
+        <a href="#" target="_blank" rel="external nofollow" title="Linked it"><i class="fa fa-linkedin"></i></a>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <ul class="footer_list">
+        <li>
+        <h3>Conocenos:</h3>
+        <ul class="foot_letnews_list">
+        <li>
+        <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_1.jpg"></div>
+        <div class="foot_letnews_info">
+            <br>
+        <h4><a href="local.html">ESTAMOS UBICADOS EN:</a></h4>
+        </div>
+        </li>
+        <li>
+        <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_2.jpg"></div>
+        <div class="foot_letnews_info">
+            <br>
+        <h4><a href="conocenos.html">NUESTROS OBJETIVOS:</a></h4>
+        </div>
+        </li>
+        <li>
+        <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_3.jpg"></div>
+        <div class="foot_letnews_info">
+            <br>
+        <h4><a href="AGROPECUARIA.html">NUESTROS PROGRAMAS:</a></h4>
+        </div>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <ul class="footer_list">
+        </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padd_rnone">
+        <div class="foot_gallery">
+        <h3>Galeria</h3>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_1.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_2.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_3.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_4.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_5.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_6.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_7.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_8.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_9.jpg"></div>
+        </div>
+        </div>
+        </div>
+        
+        </div>
+        </div>
+        <div class="copyright">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coppyright_txt">© 2024 CHIRINOS. Todos los derechos reservados</div>
+        <div class="time_available col-lg-3 col-md-3 col-sm-6 col-xs-6"><i class="fa fa-clock-o"></i> Lunes - Viernes &nbsp;&nbsp;(8am - 1pm) &nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="social col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <ul class="pull-right">
+        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </footer>
+        
+
+
+<div class="offcanvas_overlay"></div>
+
+    <!-- jQuery y Owl Carousel -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#docentes-carrusel').owlCarousel({
+                loop: true, // Esto permite que el carrusel siga rotando de manera infinita
+                margin: 10, // Espacio entre las tarjetas
+                nav: true, // Mostrar flechas de navegación
+                autoplay: true, // Autoplay activado
+                autoplayTimeout: 3000, // Tiempo entre cada transición (3 segundos)
+                autoplayHoverPause: true, // Pausar autoplay cuando el mouse está sobre el carrusel
+                responsive: {
+                    0: {
+                        items: 1 // Muestra 1 ítem en pantallas pequeñas
+                    },
+                    200: {
+                        items: 2 // Muestra 2 ítems en pantallas medianas
+                    },
+                    1000: {
+                        items: 3 // Muestra 3 ítems en pantallas grandes
+                    }
+                }
+            });
+        });
+
+    </script>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/jquery-plugin-collection.js"></script>
+<script type="text/javascript" src="js/owl-carousel.js"></script>
+<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+<script type="text/javascript" src="js/js-functions.js"></script>
+</body>
+
+
+</html>

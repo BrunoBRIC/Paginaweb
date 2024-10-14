@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="js/respond.min.js"></script>
+	<![endif]-->
+
+    <link rel="icon" href="images/logoprincipal.png" type="image/x-icon" />
+    <title>CHIRINOS | Libro de Reclamaciones</title>
+
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="css/mob_menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/cabecera.css" />
+
+    <link
+        href='https://fonts.googleapis.com/css?family=Raleway:800,500%7CLato:400,300,400italic,700,700italic,300italic,900italic,900,100,100italic%7CRoboto:400,500,600'
+        rel='stylesheet' type='text/css' />
+    <style>
+
+
+        .contenido {
+            margin-left: 12%;
+            margin-top: 2%;
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Fondo blanco con transparencia */
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            /* Asegura que el padding se incluya en el ancho y alto */
+        }
+
+        .info,
+        .formulario {
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .info {
+            background-color: #4b5661;
+            color: #fff;
+        }
+
+        .formulario {
+            background-color: #f8f9fa;
+        }
+
+        h2 {
+            color: #14171a;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group span {
+            color: red;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .info img {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .info p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info,
+            .formulario {
+                flex: none;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        fieldset {
+            border: 1px dashed #000;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .lo1g img {
+            width: 80px;
+            /* Ajusta el tamaño del logotipo */
+            margin-right: 10px;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8lAhqfUgMUVYq-R7M"); // Reemplaza con tu User ID real de EmailJS
+        })();
+    </script>
+</head>
+
+<body id="home" class="cms_blog">
+    <div class="header_top">
+        <div class="container">
+            <div class="top_info">
+            
+                <span class="cont_no">
+                    <i class="fa fa-phone"></i> 
+                    <a href="https://wa.me/51920857079" target="_blank">LLÁMANOS : + 51 956 126 390</a>
+                </span>
+                <i class="fa fa-envelope"></i> 
+                    <a href="mailto:educhirinos2020@gmail.com">educhirinos2020@gmail.com</a>
+            </div>
+            <ul class="top_menu">
+                <li class="special">Lunes - Viernes &nbsp;&nbsp;(8am - 1pm) &nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ul>
+        </div>
+    </div>
+    <header class="header1">
+        <div class="container0">
+            <div class="lo1g">
+                <img src="images/logoprincipal.png" alt="Logo IESTP CHIRINOS">
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa fa-phone"></i> <!-- Aquí puedes usar un ícono de Font Awesome si tienes configurado -->
+                    <span>LLÁMANOS<br>+ 51 956 126 390</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-clock"></i> <!-- Aquí puedes usar un ícono de Font Awesome si tienes configurado -->
+                    <span>HORARIO ATENCIÓN<br>Lunes a Viernes 8am - 1pm</span>
+                </div>
+            </div>
+        </div>
+        <style>
+            @media (max-width: 768px) {
+    .header1 {
+        display: none; /* Oculta la información de contacto en móviles */
+    }
+}
+        </style>
+    </header>
+    <header>
+
+        <nav>
+            <div class="container">
+                <div id="navbar" class="navbar navbar-default">
+
+                    <div class="col-md-9 col-sm-7 col-xs-7 pull-xs-right">
+
+                        <div id="dl-menu" class="dl-menuwrapper">
+                            <button class="dl-trigger visible-sm visible-xs"><i class="fa fa-bars"></i></button>
+                            <ul class="dl-menu">
+                                <li>
+
+                                </li>
+                                <li>
+                                    <a href="index.html">Inicio</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">Nosotros</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="conocenos.html">Quiénes somos</a></li>
+                                        <li><a href="organizacion-institucional.html">Organización institucional</a></li>
+                                        <li><a href="plana-jerarquica.html">Plana Jerárgica</a></li>
+                                        <li><a href="docentes.html">Personal Docente</a></li>
+                                        <li><a href="local.html">Local</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li>
+                                <a href="#"> Programas de estudio</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="AGROPECUARIA.html">AGROPECUARIA</a></li>
+
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"> Admision</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="admision.html">Admisión 2024</a></li>
+                                    <li><a href="#">Becas y Créditos</a></li>
+                                    <li><a href="matricula.html">Matriculas</a></li>
+                                    <li><a href="#">Calendarización</a></li>
+
+                                </ul>
+
+
+                            </li>
+
+
+
+                            <li>
+                                <a href="#"> Transparencia</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="documentosdegestion.html">Documento de Gestion</a></li>
+                                    <li><a href="#">Estadística</a></li>
+                                    <li><a href="inversionesydonaciones.html">Inversiones</a></li>
+                                    <li><a href="reclamaciones.html">Libro De Reclamaciones</a></li>
+                                    <li><a href="licenciamiento.html">Licenciamiento</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"> Tramite</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="tupa.html">Tupa</a></li>
+                                    <li><a href="#">Tramite Documentario</a></li>
+                                   
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#"> Servicios</a>
+                                <ul class="dl-submenu">
+                                    <li><a
+                                            href="https://elibro.net/es/lc/institutochirinos/login_usuario/?next=/es/lc/institutochirinos/inicio/">Biblioteca
+                                            Virtual</a></li>
+                                    <li><a href="https://institutoCHIRINOS.site/login/index.php" targ>Campus
+                                            Virtual</a></li>
+                                    <li><a href="#">Bolsa Laboral</a></li>
+
+                                </ul>
+
+
+                            </li>
+
+                            <li>
+                                <a href="#"> otros</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="#">Link institucionales</a></li>
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                </ul>
+                            </li>
+
+
+                        </div>
+                        <!--FIN DEL MENU EMERGENTE-->
+
+
+
+                        <!--Menu de la parte superior -->
+
+                        <div class="main_menu_wrap">
+                            <ul class="main_menu">
+                                <li><a class="trigger" href="index.html">inicio <i class=""></i></a>
+                                </li>
+                                <li><a class="trigger" href="#">NOSOTROS <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="conocenos.html">Quiénes somos</a></li>
+                                        <li><a href="organizacion-institucional.html">Organizacion institucional</a></li>
+                                        <li><a href="plana-jerarquica.html">Plana Jerárquica</a></li>
+                                        <li><a href="docentes.html">Personal Docente</a></li>
+                                        <li><a href="local.html">Local</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">PROGRAMA DE ESTUDIO <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="AGROPECUARIA.html">AGROPECUARIA</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Admision <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="admision.html">Admision 2024</a></li>
+                                        <li><a href="#">Becas y Creditos</a></li>
+                                        <li><a href="matricula.html">Matriculas</a></li>
+                                        <li><a href="#">Calendarización</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">TRANSPARENCIA <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="documentosdegestion.html">Documento de Gestion</a></li>
+                                        <li><a href="#">Estadistica</a></li>
+                                        <li><a href="inversionesydonaciones.html">Inversiones</a></li>
+                                        <li><a href="reclamaciones.html">Libro De Reclamaciones</a></li>
+                                        <li><a href="licenciamiento.html">Licenciamiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Tramite <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="tupa.html">Tupa</a></li>
+                                        <li><a href="#">Tramite Docuementario</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Servicios <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a
+                                                href="https://elibro.net/es/lc/institutochirinos/login_usuario/?next=/es/lc/institutochirinos/inicio/">Biblioteca
+                                                Virtual</a></li>
+                                        <li><a href="https://institutoCHIRINOS.site/login/index.php" targ>Campus
+                                                Virtual</a></li>
+                                        <li><a href="servicioscomplementarios.html">Servicio Complementario</a></li>
+                                        <li><a href="#">Bolsa Laboral</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Otros <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Link Institucionales</a></li>
+                                        <li><a href="contacto.html">Contacto</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="content_wrapper">
+
+       
+<br><br>
+        <div class="container mt-5">
+            <h2>Libro de Reclamaciones</h2>
+            <p>Si tienes alguna queja o reclamo, llenar el siguiente formulario y en breve un representante de nuestra
+                institución se pondrá en contacto con usted.</p>
+
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nombres">Nombres y Apellidos <span>*</span></label>
+                            <input type="text" name="nombres" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="numero_documento">Número de Documento <span>*</span></label>
+                            <input type="text" name="numero_documento" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="tipo_documento">Tipo de Documento <span>*</span></label>
+                            <select id="tipo_documento" name="tipo_documento" required>
+                                <option value="DNI">DNI</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                                <option value="CE">Carné de Extranjería</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="telefono">Teléfono Fijo <span>*</span></label>
+                            <input type="text" id="telefono" name="telefono" inputmode="numeric" pattern="\d*" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="movil">Móvil/Whatsapp <span>*</span></label>
+                            <input type="text" id="movil" name="movil" inputmode="numeric" pattern="\d*" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="direccion">Dirección <span>*</span></label>
+                            <input type="text" id="direccion" name="direccion" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos del Bien Contratado</legend>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="tipo_bien">Tipo de Bien <span>*</span></label>
+                            <select id="tipo_bien" name="tipo_bien" required>
+                                <option value="Producto">Producto</option>
+                                <option value="Servicio">Servicio</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="detalle_bien">Detalle del Producto y/o Servicio <span>*</span></label>
+                            <textarea id="detalle_bien" name="detalle_bien" required></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del Reclamo</legend>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="tipo_reclamo">Tipo de Reclamo <span>*</span></label>
+                            <select id="tipo_reclamo" name="tipo_reclamo" required>
+                                <option value="Reclamo">Reclamo</option>
+                                <option value="Queja">Queja</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="detalle_reclamo">Detalle del Reclamo o Queja <span>*</span></label>
+                            <textarea id="detalle_reclamo" name="detalle_reclamo" required></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles de la Acción que Tomó el Representante</legend>
+                    <div class="form-group">
+                        <label for="detalle_accion">Detalle de la Acción <span>*</span></label>
+                        <textarea id="detalle_accion" name="detalle_accion" required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-check mt-4">
+                    <input type="checkbox" id="terminos" name="terminos" class="form-check-input" required>
+                    <label class="form-check-label" for="terminos">He leído y acepto los <a href="#">Términos y
+                            Condiciones</a>.</label>
+                </div>
+
+                <div class="form-group mt-4 btn-group">
+                    <button type="submit" class="btn">ENVIAR COMENTARIOS</button>
+                    <button type="reset" class="btn">BORRAR</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Scripts de Bootstrap y funcionalidad -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </div>
+
+    </div>
+
+    <br><br><br><br><br>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+        <div class="row">
+        
+        <div class="footer_link_wrapper">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <ul class="footer_list">
+        <li>
+        <div class="footer_logo"><img alt="Footer Logo" src="images/logoprincipal.png"></div>
+        <div class="footer_txt"><p>Formamos los mejores profesionales que necesita el mundo.</p></div>
+        <div class="footer_email"><i class="fa fa-envelope"></i> <a href="mailto:abcxyz@abc.com">educhirinos2020@gmail.com</a></div>
+        <div class="footer_phone"><i class="fa fa-phone"></i> + 51 956 126 390</div>
+        <div class="social_links">
+        <a href="#" target="_blank" rel="external nofollow" title="Share it"><i class="fa fa-facebook"></i></a>
+        <a href="#" target="_blank" rel="external nofollow" title="Tweet it"><i class="fa fa-twitter"></i></a>
+        <a href="#" target="_blank" rel="external nofollow" title="Linked it"><i class="fa fa-linkedin"></i></a>
+        </div>
+        </li>
+        </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <ul class="footer_list">
+        <li>
+        <h3>Conocenos:</h3>
+        <ul class="foot_letnews_list">
+        <li>
+        <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_1.jpg"></div>
+        <div class="foot_letnews_info">
+            <br>
+        <h4><a href="local.html">ESTAMOS UBICADOS EN:</a></h4>
+        </div>
+        </li>
+        <li>
+        <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_2.jpg"></div>
+        <div class="foot_letnews_info">
+            <br>
+        <h4><a href="conocenos.html">NUESTROS OBJETIVOS:</a></h4>
+        </div>
+        </li>
+        <li>
+        <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_3.jpg"></div>
+        <div class="foot_letnews_info">
+            <br>
+        <h4><a href="AGROPECUARIA.html">NUESTROS PROGRAMAS:</a></h4>
+        </div>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+        <ul class="footer_list">
+        </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padd_rnone">
+        <div class="foot_gallery">
+        <h3>Galeria</h3>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_1.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_2.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_3.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_4.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_5.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_6.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_7.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_8.jpg"></div>
+        <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_9.jpg"></div>
+        </div>
+        </div>
+        </div>
+        
+        </div>
+        </div>
+        <div class="copyright">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coppyright_txt">© 2024 CHIRINOS. Todos los derechos reservados</div>
+        <div class="time_available col-lg-3 col-md-3 col-sm-6 col-xs-6"><i class="fa fa-clock-o"></i> Lunes - Viernes &nbsp;&nbsp;(8am - 1pm) &nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="social col-lg-3 col-md-3 col-sm-6 col-xs-6">
+        <ul class="pull-right">
+        <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </footer>
+        
+
+
+    <div class="offcanvas_overlay"></div>
+
+
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/jquery-plugin-collection.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/js-functions.js"></script>
+    <!-- Script para manejar el envío del formulario usando EmailJS -->
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevenir el envío del formulario por defecto
+            emailjs.sendForm('service_vuw5nss', 'template_wviv36p', this)
+                .then(function () {
+                    alert('Formulario enviado correctamente!');
+                    document.getElementById('contact-form').reset(); // Limpiar el formulario
+                }, function (error) {
+                    alert('Ocurrió un error: ' + JSON.stringify(error));
+                });
+        });
+    </script>
+
+
+
+</body>
+
+
+</html>

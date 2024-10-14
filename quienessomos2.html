@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!--[if IE]>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+
+
+<!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="js/respond.min.js"></script>
+	<![endif]-->
+
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<title>LearnMate | Quienes Somos</title>
+
+<link rel="stylesheet" type="text/css" href="css/animate.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="css/mob_menu.css" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="css/rev/pe-icon-7-stroke.css" />
+<link rel="stylesheet" type="text/css" href="css/rev/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/rev/settings.css" />
+<link rel="stylesheet" type="text/css" href="css/rev/layers.css" />
+<link rel="stylesheet" type="text/css" href="css/rev/navigation.css" />
+<link rel="stylesheet" type="text/css" href="css/cebecera.css" />
+
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:800,500%7CLato:400,300,400italic,700,700italic,300italic,900italic,900,100,100italic%7CRoboto:400,500,600' rel='stylesheet' type='text/css' />
+<style>
+            .h1-CO{
+           color: #f9f9f9;
+        }
+.authorities-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; /* Espacio entre las imágenes */
+        margin-top: 20px; /* Margen entre el título y las fotos */
+    }
+
+    .authority-item {
+        text-align: center;
+    }
+
+    .authorities-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Bordes redondeados de las imágenes */
+    }
+
+    .authority-item p {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333; /* Color del texto de los cargos */
+    }
+
+.title-with-icon {
+    margin-right: 45px;
+    font-family: 'Arial', sans-serif; /* O una fuente sans-serif similar */
+    font-size: 28px; /* Tamaño adecuado para tu diseño */
+    font-weight: bold;
+    color: #1A4E8A; /* Azul fuerte */
+    display: flex;
+    align-items: center;
+    padding-left: 25px; 
+}
+
+.icon {
+    color: #F68B1F; /* Naranja fuerte */
+    margin-right: 15px; /* Espacio pequeño entre el ícono y el texto */
+    font-size: 28px; /* Ajusta el tamaño para que coincida con el texto */
+}
+
+
+    /* */ 
+    .hero-section {
+                background: linear-gradient(to right, rgba(185, 185, 190, 0.9), rgba(4, 105, 105, 0.9)), url('images/vision.png') no-repeat center center;
+                background-size: cover;
+                color: rgb(224, 214, 214);
+                text-align: center;
+                padding: 100px 20px;
+                position: relative;
+            }
+    
+            .hero-section h1 {
+                font-size: 36px;
+                margin-bottom: 10px;
+            }   
+    
+            .hero-section p {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+    
+            .faq-container {
+    width: 60%;
+    margin: 0 auto;
+}
+    /* Estructura del contenedor principal */
+    .tab-container2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* Estilo de las pestañas en la barra lateral */
+    .tab {
+        flex: 1;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-right: 1px solid #ddd;
+        min-width: 200px;
+    }
+
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 14px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .tab button.active {
+        background-color: #5a4f9b;
+        color: white;
+    }
+
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Estilo del contenido de las pestañas */
+    .tabcontent {
+        flex: 3;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-left: 10px;
+    }
+
+    /* Sub-pestañas */
+    .sub-tab-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sub-tab button {
+        background-color: #e0e0e0;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .sub-tab button.active {
+        background-color: #5a4f9b;
+        color: white;
+    }
+
+    .sub-tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Estilo del contenido de las sub-pestañas */
+    .sub-tabcontent {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .sub-tabcontent.active {
+        display: block;
+    }
+
+    /* Ajustes generales */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+<style>
+    .header_to {
+        background-color: #272727;
+        padding: 12px 0;
+        display: inline-block;
+        width: 100%;
+        color: #979797;
+        line-height: 15px
+    }
+            /* */
+    .contai2ner {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 20px;
+                max-width: 1200px;
+                margin: auto;
+            }
+    
+            .text-content {
+                width: 60%;
+            }
+    
+            .text-contewnt h2 {
+                font-size: 24px;
+                color: #333333;
+            }
+    
+            .text-content p {
+                font-size: 16px;
+                color: #555555;
+                line-height: 1.6;
+            }
+    
+            .image-content {
+                width: 35%;
+            }
+    
+            .image-content img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+            }
+    
+            .header-banner {
+                background-color: #5a4f9b;
+                color: white;
+                text-align: center;
+                padding: 15px;
+                font-size: 24px;
+            }
+            .module-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 40px 0;
+            }
+    
+            .module-row {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                width: 100%;
+                justify-content: center;
+            }
+    
+            .module {
+                background-color: #e0e0e0;
+                padding: 20px;
+                margin: 0 10px;
+                border-radius: 5px;
+                font-size: 18px;
+                color: #333;
+                flex: 1;
+                max-width: 350px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+    
+            .connector {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: 50px;
+                height: 50px;
+            }
+    
+            .connector::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                width: 2px;
+                background-color: #00aaff;
+                z-index: -1;
+            }
+    
+            .icon {
+                width: 30px;
+                height: 30px;
+                background-color: #00aaff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 18px;
+            }
+    
+            .graduation {
+                margin-top: 40px;
+                text-align: center;
+            }
+    
+            .graduation img {
+                width: 100px;
+                height: auto;
+            }
+    
+            .graduation p {
+                font-size: 20px;
+                margin-top: 10px;
+                color: #333;
+            }
+            .bord {
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                max-width: 400px;
+                text-align: left;
+            }
+    
+            .bord ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+    
+            .bord li {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+            }
+    
+            .bord li::before {
+                content: '➤';
+                color: #00aaff;
+                font-size: 18px;
+                margin-right: 10px;
+            }
+    
+            h2 {
+                color: #333;
+                margin-bottom: 30px;
+            }
+        </style>
+
+</head>
+<body id="home" class="cms_blog  cms_index4">
+
+    <div class="header_top">
+        <div class="container">
+            <div class="top_info">
+                <span>Have any question?</span>
+                <span class="cont_no">
+                    <i class="fa fa-phone"></i> <a href="#">USA : + 1 800 123 1234</a>
+                </span>
+                <i class="fa fa-envelope"></i> <a href="mailto:abcxyz@abc.com">support@abcxyz.com</a>
+            </div>
+            <ul class="top_menu">
+                <li class="special">Mon - Sat &nbsp;&nbsp;(9am - 5pm) &nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href="#">Register</a> /</li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container0">
+            <div class="log">
+                <img src="images/logoprincipal.png" alt="Logo IESTP CHIRINOS">
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa fa-phone"></i> <!-- Aquí puedes usar un ícono de Font Awesome si tienes configurado -->
+                    <span>LLÁMANOS<br>952612565</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-clock"></i> <!-- Aquí puedes usar un ícono de Font Awesome si tienes configurado -->
+                    <span>HORARIO ATENCIÓN<br>Lunes a Viernes 8am - 1pm</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header>
+        <nav>
+            <div class="container">
+                <div id="navbar" class="navbar navbar-default">
+
+                    <div class="col-md-9 col-sm-7 col-xs-7 pull-xs-right">
+
+
+                        <!--INICIO DEL MENU EMERGENTE-->
+                        <div id="dl-menu" class="dl-menuwrapper">
+                            <button class="dl-trigger visible-sm visible-xs"><i class="fa fa-bars"></i></button>
+                            <ul class="dl-menu">
+                                <li>
+
+                                </li>
+                                <li>
+                                    <a hhref="index.html">INICIO</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">NOSOTROS</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="quienessomos2.html">Quienes somos</a></li>
+                                        <li><a href="organizacioninstitu.html">Organizacion institucional</a></li>
+                                        <li><a href="planaGerargica.html">Plana Jerárgica</a></li>
+                                        <li><a href="teachers.html">Personal Docente</a></li>
+                                        <li><a href="local.html">Local</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">PROGRAMA DE ESTUDIOS</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="ProducciónAgropecuaria.html">Producción Agropecuaria</a></li> 
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">ADMISION</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="admision.html">Admision 2024</a></li>
+                                        <li><a href="#">Becas y Creditos</a></li>
+                                        <li><a href="matricula.html">Matriculas</a></li>
+                                        <li><a href="#">Calendarización</a></li> 
+                                    </ul>
+                                </li>
+
+
+
+                                <li>
+                                    <a href="#">TRANSPARENCIA</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="documentosdegestion.html">Documento de Gestion</a></li>
+                                        <li><a href="#">Estadistica</a></li>
+                                        <li><a href="inversionesydonaciones.html">Inversiones</a></li>
+                                        <li><a href="librodereclamaciones.html">Libro De Reclamaciones</a></li>
+                                        <li><a href="licenciamiento.html">Licenciamiento</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">TRAMITE</a>
+                                    <ul class="dl-submenu">
+                                        <li><a href="">Tupa</a></li>
+                                        <li><a href="#">Tramite Docuementario</a></li>
+                                        <li><a href="contact.html">Constacto</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">SERVICIOS</a>
+                                    <ul class="dl-submenu">
+                                        <li><a
+                                            href="https://chirinos.bibliotecalatina.com/login">Biblioteca
+                                            Virtual</a></li>
+                                    <li><a href="https://institutoCHIRINOS.site/login/index.php" targ>Campus
+                                            Virtual</a></li>
+                                    <li><a href="#">Servicio Complemantario</a></li>
+                                    </ul>
+                                </li>
+
+                                <LI>
+                                    <a href="#">OTROS</a>
+                                </LI>
+                                
+                            </ul>
+                        </div>
+
+                        <!--FIN DEL MENU EMERGENTE-->
+
+
+<!--MENU PRINCIPAL-->
+                        <div class="main_menu_wrap">
+                            <ul class="main_menu">
+                                <li><a class="trigger" href="index.html">inicio <i class=""></i></a>
+                                </li>
+                                <li><a class="trigger" href="#">NOSOTROS <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="quienessomos2.html">Quienes somos</a></li>
+                                        <li><a href="organizacioninstitu.html">Organizacion institucional</a></li>
+                                        <li><a href="planaGerargica.html">Plana Jerárgica</a></li>
+                                        <li><a href="teachers.html">Personal Docente</a></li>
+                                        <li><a href="local.html">Local</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">PROGRAMA DE ESTUDIO <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="ProducciónAgropecuaria.html">Producción Agropecuaria</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Admision <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="admision.html">Admision 2024</a></li>
+                                        <li><a href="#">Becas y Creditos</a></li>
+                                        <li><a href="matricula.html">Matriculas</a></li>
+                                        <li><a href="#">Calendarización</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">TRASNSPARENCIA <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="documentosdegestion.html">Documento de Gestion</a></li>
+                                        <li><a href="#">Estadistica</a></li>
+                                        <li><a href="inversionesydonaciones.html">Inversiones</a></li>
+                                        <li><a href="librodereclamaciones.html">Libro De Reclamaciones</a></li>
+                                        <li><a href="licenciamiento.html">Licenciamiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Tramite <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="">Tupa</a></li>
+                                        <li><a href="#">Tramite Docuementario</a></li>
+                                        <li><a href="#">Constacto</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Servicios <i class="fa fa-angle-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a
+                                                href="https://chirinos.bibliotecalatina.com/login">Biblioteca
+                                                Virtual</a></li>
+                                        <li><a href="https://institutoCHIRINOS.site/login/index.php" targ>Campus
+                                                Virtual</a></li>
+                                        <li><a href="#">Servicio Complemantario</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="trigger" href="#">Otros</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!--FIN DEL MENÚ PRINCIPAL-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<div class="content_wrapper">
+    <div class="breadcrumb_wrap" data-stellar-background-ratio="0.3" style="background: url(images/slider_graduate.jpg); background-attachment: fixed; background-position: 50% 50%;">
+        <div class="breadcrumb_wrap_inner">
+            <div class="container">
+                <h1>Quienes Somos</h1>
+                <ul class="breadcrumbs">
+                    <!-- Breadcrumbs -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-container2">
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'Certificaciones')">Acerca de Nosotros</button>
+            <button class="tablinks" onclick="openTab(event, 'Plan de Estudios')">Misión y Visión</button>
+            <button class="tablinks" onclick="openTab(event, 'Oficio De Aprobación')">Nuestros Valores</button>
+            <button class="tablinks" onclick="openTab(event, 'Perfil')">Perfil Del Egresado</button>
+            <button class="tablinks" onclick="openTab(event, 'Ambito')">Ámbito De Desempeño</button>
+            <button class="tablinks" onclick="openTab(event, 'Competencias')">Competencias Específicas</button>
+        </div>
+
+        <!-- Contenido de cada pestaña -->
+        <div id="Certificaciones" class="tabcontent active">
+            <h1 class="title-with-icon">
+                <span class="icon">»</span>IESTP Chirinos
+            </h1>
+            <br>
+            <p>El Instituto de Educación Superior Tecnológico Público “CHIRINOS”, es una institución educativa superior no universitaria, reconocida con Resolución Ministerial N° 0118-2008-ED, se aboca a la formación de PROFESIONALES TÉCNICOS EN PRODUCCIÓN AGROPECUARIOS, en el distrito de Chirinos, Provincia de San Ignacio, Región Cajamarca, nuestra institución funciona en el local del CEBA “Víctor Andrés Belaunde”...</p>
+            <p>Nuestra institución es gestionada a partir del año 2005, por las autoridades locales, apoyadas por un grupo de personas muy entusiastas que buscan el desarrollo de Chirinos...</p>
+        </div>
+
+        <div id="Plan de Estudios" class="tabcontent">
+            <h1 class="title-with-icon">
+                <span class="icon">»</span>Misión
+            </h1>
+            <br>
+            <p>Formar profesionales técnicos de calidad que afronten profesionalmente los retos del actual mundo competitivo y globalizado, incidiendo en la práctica de valores morales, alta calidad académica, humanista, compromiso institucional, lealtad, principios éticos, potenciando sus capacidades de criterios y análisis, investigación, gestión empresarial y búsqueda de soluciones para el desarrollo sostenible de nuestra región y del País...</p>
+            <h1 class="title-with-icon">
+                <span class="icon">»</span>Visión
+            </h1>
+            <br>
+            <p>Nuestra Institución Educativa se ha propuesto contar con procesos académicos de investigación, ejecución de proyectos productivos, extensión agropecuaria, proyección social y docencia de calidad...</p>
+        </div>
+
+        <div id="Oficio De Aprobación" class="tabcontent">
+            <h1 class="title-with-icon">
+                <span class="icon">»</span>Nuestros Valores
+            </h1>
+            <br>
+            <b>Actitud de servicio:</b><p>Todos en la empresa, sin excepción, procuramos ser amables, proactivos e interesados en la prestación eficiente y eficaz de nuestros servicios.</p>
+            <b>Honestidad:</b><p>Asumimos este valor con una dosis de valentía y una clara voluntad por mantener la coherencia de nuestros actos, lo cual nos lleva a sembrar la confianza en uno mismo y a ganarnos la de los demás.</p>
+            <b>Innovación:</b><p>Es preponderante en nuestras actividades diarias...</p>
+            <b>Puntualidad:</b><p>Es permanente en nuestro trabajo diario ya que refleja el respeto por el tiempo de nuestros Clientes y colaboradores.</p>
+            <b>Lealtad:</b><p>Medular en nuestra empresa, entendiendo esta como la reciprocidad entre la empresa y sus colaboradores...</p>
+            <b>Compromiso:</b><p>Con todos nuestros clientes al ofrecerles servicios de calidad...</p>
+        </div>
+
+        <div id="Perfil" class="tabcontent">
+            <h1 class="title-with-icon">
+                <span class="icon">»</span>Perfil Del Egresado
+            </h1>
+            <br>
+            <p>El egresado del programa de estudios de Producción Agropecuaria es competente para gestionar procesos de producción agrícola y pecuaria, además de supervisar los procesos de prevención y control de plagas, así como el aprovechamiento y comercialización de productos y subproductos agropecuarios...</p>
+        </div>
+
+        <div id="Ambito" class="tabcontent">
+            <h1 class="title-with-icon">
+                <span class="icon">»</span>Ámbito De Desempeño
+            </h1>
+            <br>
+            <p>El egresado de Producción Agropecuaria puede desempeñarse en organizaciones públicas y privadas, en las siguientes áreas:</p>
+            <p><b>Sector Agrícola:</b></p>
+            <p>- Área de proyectos productivos</p>
+            <p>- Área de producción agrícola</p>
+            <p>- Área de sanidad agrícola</p>
+            <p>- Área de viveros</p>
+            <p>- Área de manejo de riego tecnificado</p>
+            <p><b>Sector Pecuario:</b></p>
+            <p>- Área de instalaciones agropecuarias</p>
+            <p>- Área de sanidad animal</p>
+            <p>- Área de extensión agropecuaria</p>
+            <p>- Área de manejo ganadero (animales mayores y menores)</p>
+            <p>- Área de nutrición y alimentación animal</p>
+        </div>
+
+        <div id="Competencias" class="tabcontent">
+            <h1 class="title-with-icon">
+                <span class="icon">»</span>Competencias Específicas
+            </h1>
+            <br>
+            <p>- Supervisar la implementación de la infraestructura productiva agrícola y/o pecuaria de acuerdo con el plan de producción, buenas prácticas, procedimientos establecidos y normativa correspondiente.</p>
+            <p>- Realizar la instalación y preparación del terreno de acuerdo al tipo de cultivo, requerimientos del mercado, buenas prácticas agrícolas y normativa correspondiente.</p>
+            <p>- Supervisar los procesos productivos agrícolas y/o pecuarios de acuerdo con el plan de producción, requerimientos del mercado, buenas prácticas, procedimientos establecidos y normativa correspondiente.</p>
+            <p>- Supervisar la ejecución del plan operativo agrícola y/o pecuario de acuerdo con la unidad productiva, procedimientos establecidos y normativa correspondiente.</p>
+            <p>- Supervisar el procesamiento primario de productos agrícolas y/o pecuarios de acuerdo con requerimientos del mercado, buenas prácticas, plan establecido, y normativa correspondiente.</p>
+        </div>
+
+    </div>
+
+
+
+<script>
+    function openTab(evt, tabName) {
+        // Esconder todo el contenido de las pestañas
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            tabcontent[i].classList.remove("active");
+        }
+
+        // Remover la clase "active" de todos los botones de las pestañas
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Mostrar el contenido de la pestaña actual y añadir una clase "active" al botón de la pestaña
+        document.getElementById(tabName).style.display = "block";
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.className += " active";
+    }
+
+    // Mostrar la pestaña "Certificaciones" por defecto
+    document.getElementById("Certificaciones").style.display = "block";
+</script>
+
+
+<br><br><br><br>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+    <div class="row">
+    
+    <div class="footer_link_wrapper">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+    <ul class="footer_list">
+    <li>
+    <div class="footer_logo"><img alt="Footer Logo" src="images/logoprincipal.png"></div>
+    <div class="footer_txt"><p>Formamos los mejores profesionales que necesita el mundo.</p></div>
+    <div class="footer_email"><i class="fa fa-envelope"></i> <a href="mailto:abcxyz@abc.com">educhirinos2020@gmail.com</a></div>
+    <div class="footer_phone"><i class="fa fa-phone"></i> + 51 956 126 390</div>
+    <div class="social_links">
+    <a href="#" target="_blank" rel="external nofollow" title="Share it"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" rel="external nofollow" title="Tweet it"><i class="fa fa-twitter"></i></a>
+    <a href="#" target="_blank" rel="external nofollow" title="Linked it"><i class="fa fa-linkedin"></i></a>
+    </div>
+    </li>
+    </ul>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <ul class="footer_list">
+    <li>
+    <h3>Conocenos:</h3>
+    <ul class="foot_letnews_list">
+    <li>
+    <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_1.jpg"></div>
+    <div class="foot_letnews_info">
+        <br>
+    <h4><a href="local.html">ESTAMOS UBICADOS EN:</a></h4>
+    </div>
+    </li>
+    <li>
+    <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_2.jpg"></div>
+    <div class="foot_letnews_info">
+        <br>
+    <h4><a href="conocenos.html">NUESTROS OBJETIVOS:</a></h4>
+    </div>
+    </li>
+    <li>
+    <div class="foot_letnews_img"><img alt="" src="images/pie/resized_image_group_3.jpg"></div>
+    <div class="foot_letnews_info">
+        <br>
+    <h4><a href="AGROPECUARIA.html">NUESTROS PROGRAMAS:</a></h4>
+    </div>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+    <ul class="footer_list">
+    </ul>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padd_rnone">
+    <div class="foot_gallery">
+    <h3>Galeria</h3>
+    <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_1.jpg"></div>
+    <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_2.jpg"></div>
+    <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_3.jpg"></div>
+    <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_4.jpg"></div>
+    <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_5.jpg"></div>
+    <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_6.jpg"></div>
+    <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_7.jpg"></div>
+    <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_8.jpg"></div>
+    <div class="col-md-4 col-xs-3"><img alt="" src="images/FOTER/resized_image_9.jpg"></div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    <div class="copyright">
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 coppyright_txt">© 2024 CHIRINOS. Todos los derechos reservados</div>
+    <div class="time_available col-lg-3 col-md-3 col-sm-6 col-xs-6"><i class="fa fa-clock-o"></i> Lunes - Viernes &nbsp;&nbsp;(8am - 1pm) &nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="social col-lg-3 col-md-3 col-sm-6 col-xs-6">
+    <ul class="pull-right">
+    <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+    
+
+
+<div class="offcanvas_overlay"></div>
+
+
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/jquery-plugin-collection.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/js-functions.js"></script>
+</body>
+
+
+</html>
